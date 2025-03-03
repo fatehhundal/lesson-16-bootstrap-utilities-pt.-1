@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Memories | Sam's Blog</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <style>
+            .slider {
+                max-width: 1000px;
+                height: 500px;
+                overflow: hidden;
+                position: relative;
+                margin: auto;
+                align: center;
+            }
+            
+            .slide {
+                display: flex;
+                width: 300%;
+                animation: slide 15s infinite linear;
+                align: center;
+            }
+
+            .slide img {
+                width: 33.33%;
+                object-fit: cover;
+            }
+
+            @keyframes slide {
+                0% {transform: translateX(0);}
+                25% {transform: translateX(-100%);}
+                50% {transform: translateX(-200%);}
+                75% {transform: translateX(-300%);}
+                100% {transform: translateX(0%);}
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="jumbotron jumbotron-fluid bg-success text-white">
+            <div class="container">
+                <h1 style="text-align: center;">Memories</h1>
+                <p>This page is full of my memories, captured as photographs</p>
+            </div>
+        </div>
+
+        <div class="container bg-warning">
+            <div class="slider">
+                <div class="slide">
+                    <img src="dwellingup_zipline.png" alt="Treetops Adventure, Dwellingup, Western Australia">
+                    <img src="rottnest_lighthouse.png" alt="Wadjemup Lighthouse, Rottnest Island, Western Australia">
+                    <img src="thepavilion_mindarie.jpg" alt="The Pavilion, The Marina, Mindarie, Western Australia">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container bg-primary my-3">
+                <a href="#" style="color: white">Sam's Blog home page</a>
+            </div>
+        </footer>
+    </body>
+</html>
